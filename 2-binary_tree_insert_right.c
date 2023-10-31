@@ -2,7 +2,7 @@
 
 /**
  * binary_tree_insert_right - creates a binary tree nodde and inserts it into a
- * 	given parent node
+ *	given parent node
  *
  * @parent: the parent node
  * @value: value to be inserted
