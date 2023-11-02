@@ -68,4 +68,5 @@ int *heap_to_sorted_array(heap_t *heap, size_t *size);
 
 /*helper functions*/
 int binary_tree_h(binary_tree_t *tree);
+int binary_tree_d(const binary_tree_t *tree);
 #endif /* _BINARY_TREES_H_ */
