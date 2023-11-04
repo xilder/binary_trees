@@ -19,7 +19,6 @@ int binary_tree_hc(binary_tree_t *tree)
 
 	if (l == 2 && r == 1)
 		return 0;
-
 	return (l - r >= 0 && l - r <= 1 ? l : 0);
 }
 
@@ -33,17 +32,14 @@ int binary_tree_hc(binary_tree_t *tree)
 
 int binary_tree_is_complete(const binary_tree_t *tree)
 {
-	int l, r;
-	binary_tree_t *node = (binary_tree_t *) tree;
+	int complete;
+	binary_tree_t *node = (binary_tree_t *)tree;
 
 	if (!node)
 		return (0);
 	if (!(node->left) && !(node->right))
 		return (1);
-	l = binary_tree_hc(tree->left);
-	r = binary_tree_hc(tree->right);
+	complete = binary_tree_hc(node);
 
-	if (l == 0 && r == 0)
-		return 0;
-	return (l - r >= 0 && l - r <= 1 ? 1 : 0);
+	return (complete ? 1 : 0);
 }
