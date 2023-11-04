@@ -26,7 +26,8 @@ int binary_tree_h(binary_tree_t *tree)
  * @func: print function
  */
 
-void binary_level_order(const binary_tree_t *node, int level, void (*func)(int))
+void binary_level_order(const binary_tree_t *node,
+		int level, void (*func)(int))
 {
 	if (level == 0)
 		func(node->n);
