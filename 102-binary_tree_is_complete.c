@@ -10,6 +10,7 @@
 int binary_tree_hc(binary_tree_t *tree)
 {
 	int l, r;
+
 	if (!(tree->left))
 		return (0);
 	if (!(tree->left->left))
@@ -18,7 +19,7 @@ int binary_tree_hc(binary_tree_t *tree)
 	r = 1 + binary_tree_hc(tree->right);
 
 	if (l == 2 && r == 1)
-		return 0;
+		return (0);
 	return (l - r >= 0 && l - r <= 1 ? l : 0);
 }
 
