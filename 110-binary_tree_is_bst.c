@@ -14,7 +14,6 @@ int binary_tree_is_bst_helper(binary_tree_t *tree, int min, int max)
 {
 	if (!tree)
 		return (1);
-	printf("%d, %d, %d\n", min, tree->n, max);
 	if (tree->n < min || tree->n > max)
 		return (0);
 	return (binary_tree_is_bst_helper(tree->left, min, tree->n)
