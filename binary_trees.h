@@ -72,4 +72,8 @@ int binary_tree_h(binary_tree_t *tree);
 int binary_tree_hc(binary_tree_t *tree);
 int binary_tree_d(const binary_tree_t *tree);
 void binary_level_order(const binary_tree_t *node, int level, void (*func)(int));
+bst_t *bst_remove_no_children_helper(bst_t *root, bst_t *node);
+bst_t *bst_remove_one_child_helper(bst_t *root, bst_t *node);
+bst_t *bst_remove_one_child_no_parent_helper(bst_t *root, bst_t *node);
+bst_t *bst_remove_two_children_helper(bst_t *root, bst_t *node);
 #endif /* _BINARY_TREES_H_ */
