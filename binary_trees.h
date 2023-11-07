@@ -76,4 +76,5 @@ bst_t *bst_remove_no_children_helper(bst_t *root, bst_t *node);
 bst_t *bst_remove_one_child_helper(bst_t *root, bst_t *node);
 bst_t *bst_remove_one_child_no_parent_helper(bst_t *root, bst_t *node);
 bst_t *bst_remove_two_children_helper(bst_t *root, bst_t *node);
+int binary_tree_is_avl_helper(binary_tree_t *tree, int min, int max);
 #endif /* _BINARY_TREES_H_ */
